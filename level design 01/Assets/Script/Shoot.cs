@@ -8,12 +8,13 @@ public class Shoot : MonoBehaviour
     public float bulletSpeed;
     public Rigidbody rb;
     public Transform camTrans;
+    public Transform shootPoint;
 
     void Update()
     {
         if(Input.GetMouseButtonDown(0)){
-            GameObject bulletInstance = Instantiate(bullet, transform.position, transform.rotation);
-            bulletInstance.GetComponent<Rigidbody>().AddForce(new Vector3(camTrans.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0)*bulletSpeed);
+            GameObject bulletInstance = Instantiate(bullet, transform.position + new Vector3(0f,0.76f,0f), transform.rotation);
+            bulletInstance.GetComponent<Rigidbody>().AddForce(shootPoint.forward*bulletSpeed);
         }
         
     }
