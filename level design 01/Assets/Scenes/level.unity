@@ -35858,7 +35858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33bd9def980e58e4589cc11fc3d5842c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorAnimator: {fileID: 0}
+  doorAnimator: {fileID: 1861773841}
   isClosed: 1
 --- !u!1 &1669293970
 GameObject:
