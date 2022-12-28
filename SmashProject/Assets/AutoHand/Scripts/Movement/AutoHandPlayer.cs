@@ -29,7 +29,7 @@ namespace Autohand {
         public bool interpolateMovement = true;
         [EnableIf("useMovement")]
         [Tooltip("Movement speed when isGrounded")]
-        public float moveSpeed = 2f;
+        public float moveSpeed = 3f;
         [EnableIf("useMovement")]
         [Tooltip("Maximum distance that the head is allowed to be from the body before movement on that axis is stopped")]
         [Min(0.1f)]
@@ -41,7 +41,7 @@ namespace Autohand {
         public bool autoAdjustColliderHeight = true;
         [ShowIf("autoAdjustColliderHeight")]
         [Tooltip("Minimum and maximum auto adjusted height, to adjust height without auto adjustment change capsule collider height instead")]
-        public Vector2 minMaxHeight = new Vector2(0.7f, 2f);
+        public Vector2 minMaxHeight = new Vector2(0.7f, 1.3f);
 
 
 
@@ -57,9 +57,9 @@ namespace Autohand {
         [AutoToggleHeader("Use Grounding")]
         public bool useGrounding = true;
         [EnableIf("useGrounding"), Tooltip("Maximum height that the body can step up onto"), Min(0)]
-        public float maxStepHeight = 0.1f;
+        public float maxStepHeight = 0.15f;
         [EnableIf("useGrounding"), Tooltip("Maximum angle the player can walk on"), Min(0)]
-        public float maxStepAngle = 30f;
+        public float maxStepAngle = 46f;
         [EnableIf("useGrounding"), Tooltip("The layers that count as ground")]
         public LayerMask groundLayerMask;
         [EnableIf("useGrounding")]
