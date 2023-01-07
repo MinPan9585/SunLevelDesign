@@ -314,8 +314,8 @@ MonoBehaviour:
   collisionTriggers:
     serializedVersion: 2
     m_Bits: 4294967295
-  source: {fileID: 0}
-  clip: {fileID: 0}
+  source: {fileID: -1518301391015728376}
+  clip: {fileID: 8300000, guid: fcf5f7caa7e172f4abf3eb1fc1731c11, type: 3}
   velocityVolumeCurve:
     serializedVersion: 2
     m_Curve:
