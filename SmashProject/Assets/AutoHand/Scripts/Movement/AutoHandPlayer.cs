@@ -29,7 +29,7 @@ namespace Autohand {
         public bool interpolateMovement = true;
         [EnableIf("useMovement")]
         [Tooltip("Movement speed when isGrounded")]
-        public float moveSpeed = 3f;
+        public float moveSpeed = 5f;
         [EnableIf("useMovement")]
         [Tooltip("Maximum distance that the head is allowed to be from the body before movement on that axis is stopped")]
         [Min(0.1f)]
