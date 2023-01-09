@@ -18,6 +18,4 @@ public class ScoreManager : MonoBehaviour
         }
         instance = this;
     }
-
-
 }

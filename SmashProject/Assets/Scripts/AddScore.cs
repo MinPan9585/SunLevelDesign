@@ -7,7 +7,6 @@ public class AddScore : MonoBehaviour
 {
     void Start()
     {
-        InvokeRepeating("AddTenScore", 1f, 1f);
     }
 
     void AddTenScore()
